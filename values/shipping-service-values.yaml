@@ -1,11 +1,11 @@
-appName:  shippingservice
+appName: shippingservice
 appImage: gcr.io/google-samples/microservices-demo/shippingservice
-appVersion: v0.4.2
+appVersion: v0.5.0
 appReplicas: 2
 containerPort: 50051
 containerEnvVars:
-- name: PORT
-  value: "50051"
-- name: DISABLE_PROFILER
-  value: "1"
+  - name: PORT
+    value: "50051"
+  - name: DISABLE_PROFILER
+    value: "1"
 servicePort: 50051
